@@ -1,0 +1,3 @@
+pi: digits/pi1000.txt
+tau: digits/tau1000.txt
+sqrt(2): digits/sqrt21000.txt
