@@ -4,7 +4,7 @@ WIDTH = 20 # digits per line printed for corrections when a mistake is made
 
 with open('paths.txt', 'r') as pathfile:
     paths = pathfile.read()
-paths_dict = dict(re.split('\s*:\s*', path) for path in paths.splitlines()) # splits on colons with 0-infinity spaces around them
+paths_dict = dict(re.split('\\s*:\\s*', path) for path in paths.splitlines()) # splits on colons with 0-infinity spaces around them
 
 choice = ''
 acceptable_indices = [str(i) for i in range(1,len(paths_dict)+1)]
